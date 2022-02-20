@@ -1,1 +1,48 @@
-# kollazs
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ŰRLAP</title>
+</head>
+
+<body>
+     <form name="rendeles">
+            <h1>Leves Rendelés</h1>
+            <fieldset>
+                <legend>Vevő adatai:</legend>
+                <p><label>Név: <input type="text" name="nev">
+                        <small>Vezetéknév Keresztnév</small></label></p>
+                <p><label>Telefon: <input type="tel" name="telefon" size="10"></label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Leves adaga</legend>
+                <p><label><input type="radio" name="meret" value="kicsi">kis adag</label></p>
+                <p><label><input type="radio" name="meret" value="nagy">nagy adag</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Választék</legend>
+                <p><label><input type="checkbox" name="valastek1" value="gulyasleves">gulyás leves</label></p>
+                <p><label><input type="checkbox" name="valastek2" value="csontleves">csont leves</label></p>
+                <p><label><input type="checkbox" name="valastek3" value="gombaleves">gomba leves</label></p>
+                <p><label><input type="checkbox" name="valastek4" value="bableves">bab leves</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Végezetül</legend>
+                <p><label>mennyiség: <input type="number" name="mennyiseg"> db</label></p>
+                <p><label>egyéb kívánságok: <textarea name="egyeb"></textarea></label></p>
+                <p><label>Kért szállítási idő: <input type="time" name="kiszallitas"></label></p>
+                <br>
+                <input type="reset" name="visszaallitas">
+                <input type="submit" name="kuldes">
+            </fieldset>
+        </form>
+    </div>
+    
+    <div class="footer">
+        <p>𝕭𝕮𝕾</p>
+        </div>
+    
+</body>
+</html>
