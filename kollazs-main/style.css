@@ -1,0 +1,81 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #ff0000;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+    margin: 0;
+    font-family: 'Courier New';
+  }
+
+  h1{
+    font-family:  'Lucida Grande';
+    font-size: 70px;
+    color: #9e06e8;
+  }
+  
+  h2{
+    color: green;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    font-family: 'Rubik Beastly', cursive;
+    font-size: 30px;
+    background-color: orangered;
+    color: black;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+  
+    .sidebar a {
+        float: left;
+    }
+  
+    div.content {
+        margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orangered;
+    color:black ;
+    text-align: center;
+  }
